@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../User/inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3
+-I.\RTE\_STM32_test
+-IF:\Keil\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-IF:\Keil\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE
+-o stm32_test\usart_pro.o --omf_browse stm32_test\usart_pro.crf --depend stm32_test\usart_pro.d --feedback "STM32_test\STM32_test.fed" "..\User\src\usart_pro.c"
