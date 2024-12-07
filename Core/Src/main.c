@@ -128,8 +128,9 @@ int main(void)
     if(rx_flag == 1)
     {
       rx_flag = 0;
-      USART_SendArray(rx_buf, rx_len);
+      // USART_SendArray(rx_buf, rx_len);
       // printf("hello world\r\n");
+      printf("rx_buf:%s\r\n");
     }
     
   }
